@@ -19,6 +19,9 @@ ul,li
 .container
     max-width: 90%
 
+::-webkit-scrollbar
+    width: 0
+
 body
     background-image: url(/assets/images/AW8z38IBztw.jpg)
     background-repeat: no-repeat
@@ -89,6 +92,9 @@ header
             width: 100%
             height: 100%
             background: #ffffff
+
+    .Name_container:hover
+        cursor: default
 
     .main_word
 
@@ -161,6 +167,22 @@ header
                 background-size: cover
                 text-align: center
                 border-radius: 10px
+                -webkit-box-shadow: -2px 4px 30px 15px rgba(0, 0, 0, 0.38) inset
+                -moz-box-shadow: -2px 4px 30px 15px rgba(0, 0, 0, 0.38) inset
+                box-shadow: -2px 4px 30px 15px rgba(0, 0, 0, 0.38) inset
+
+                .numbers_timer
+                    display: grid
+                    align-items: end
+                    justify-items: center
+                    font-size: 38px
+
+                .timer_name_value
+                    display: grid
+                    align-items: center
+                    justify-items: center
+                    font-size: 16px
+
 main
     height: 500px
     width: 100%

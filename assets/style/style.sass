@@ -158,10 +158,10 @@ header
                 color: #ffffff
                 text-transform: uppercase
                 display: grid
-                grid-template-rows: 50% 50%
+                grid-template-rows: 55% 40%
                 row-gap: 5px
                 width: 100%
-                height: 108px
+                height: 102px
                 background-image: url(/assets/images/TimerBG.jpg)
                 background-repeat: no-repeat
                 background-size: cover
@@ -175,15 +175,119 @@ header
                     display: grid
                     align-items: end
                     justify-items: center
-                    font-size: 38px
+                    font-size: 34px
 
                 .timer_name_value
                     display: grid
-                    align-items: center
+                    align-items: start
                     justify-items: center
                     font-size: 16px
 
 main
-    height: 500px
     width: 100%
-    background-color: #ffffff
+
+    .dear_guests
+        padding-top: 100px
+        background-color: #ffffff
+        width: 100%
+        display: grid
+        justify-items: center
+        margin-bottom: 200px
+
+        .bottom_text
+            +arno
+            font-weight: lighter
+            font-size: 32px
+            text-align: center
+            margin-top: 40px
+            margin-bottom: 40px
+
+        .calendar
+            display: grid
+            grid-template-rows: 50px 300px
+            width: 400px
+            border: 1px solid #000000
+            -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
+            -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
+
+            .calendar_top
+                display: grid
+                grid-template-columns: 1fr 1fr
+                +arno
+                text-transform: uppercase
+                align-items: center
+                border-bottom: 1px solid #000000
+
+                .mounth
+                    text-align: left
+                    font-size: 28px
+                    padding-left: 25px
+
+                .year
+                    text-align: right
+                    padding-right: 25px
+                    font-size: 32px
+
+            .calendar_days
+                +arno
+                position: relative
+                display: grid
+                grid-template-columns: repeat(7,1fr)
+                grid-template-rows: repeat(5,1fr)
+
+                .day
+                    color: #000000
+                    display: grid
+                    font-weight: lighter
+                    font-size: 32px
+                    text-align: center
+                    align-items: center
+
+                .day:hover
+                    cursor: default
+
+                .day_out_month
+                    color: #6C6F74
+                    display: grid
+                    font-weight: lighter
+                    font-size: 32px
+                    text-align: center
+                    align-items: center
+
+                .day_out_monthay:hover
+                    cursor: default
+
+                svg
+                    position: absolute
+                    left: 229px
+                    top: 114px
+
+                svg:hover
+                    cursor: progress
+                    fill: #9E9E9E
+
+    .top_info
+        margin-top: 35px
+        display: grid
+        grid-template-columns: 1fr 625px 1fr
+        align-items: center
+        justify-items: center
+
+        span
+            width: 90px
+            height: 1px
+            background-color: #000000
+
+        h2
+            text-transform: uppercase
+            font-size: 68px
+            +arno
+            font-weight: lighter
+
+    .second_info
+        +room
+        margin-top: 25px
+        margin-bottom: 40px
+        text-align: center
+        font-size: 25px

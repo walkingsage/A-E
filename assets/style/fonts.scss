@@ -21,6 +21,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Arno Pro Light';
+  src: local('Arno Pro  Display Light'), local('Arno-Pro--Display-Light'),
+      url('/assets/style/ArnoPro-LightDisplay.woff2') format('woff2'),
+      url('/assets/style/ArnoPro-LightDisplay.woff') format('woff'),
+      url('/assets/style/ArnoPro-LightDisplay.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @mixin richmond{
   font-family:'Richmond';
 }
@@ -31,6 +41,6 @@
 }
 
 @mixin arno{
-  font-family:'Arno Pro ';
+  font-family:'Arno Pro Light';
 }
 

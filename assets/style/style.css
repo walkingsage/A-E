@@ -11,6 +11,11 @@
   src: local("/assets/style/Arno Pro  Display Regular"), local("Arno-Pro--Display-Regular"), url("/assets/style/ArnoPro-Display.woff2") format("woff2"), url("/assets/style/ArnoPro-Display.woff") format("woff"), url("/assets/style/ArnoPro-Display.ttf") format("truetype");
   font-weight: 400;
   font-style: normal; }
+@font-face {
+  font-family: 'Arno Pro Light';
+  src: local("Arno Pro  Display Light"), local("Arno-Pro--Display-Light"), url("/assets/style/ArnoPro-LightDisplay.woff2") format("woff2"), url("/assets/style/ArnoPro-LightDisplay.woff") format("woff"), url("/assets/style/ArnoPro-LightDisplay.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
 * {
   padding: 0;
   margin: 0;
@@ -172,14 +177,14 @@ header {
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 25px; }
       header .timer .timer_container .timer_values {
-        font-family: 'Arno Pro ';
+        font-family: 'Arno Pro Light';
         color: #ffffff;
         text-transform: uppercase;
         display: grid;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 55% 40%;
         row-gap: 5px;
         width: 100%;
-        height: 108px;
+        height: 102px;
         background-image: url(/assets/images/TimerBG.jpg);
         background-repeat: no-repeat;
         background-size: cover;
@@ -193,18 +198,113 @@ header {
               -ms-flex-align: end;
                   align-items: end;
           justify-items: center;
-          font-size: 38px; }
+          font-size: 34px; }
         header .timer .timer_container .timer_values .timer_name_value {
           display: grid;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: start;
           justify-items: center;
           font-size: 16px; }
 
 main {
-  height: 500px;
-  width: 100%;
-  background-color: #ffffff; }
+  width: 100%; }
+  main .dear_guests {
+    padding-top: 100px;
+    background-color: #ffffff;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    margin-bottom: 200px; }
+    main .dear_guests .bottom_text {
+      font-family: 'Arno Pro Light';
+      font-weight: lighter;
+      font-size: 32px;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px; }
+    main .dear_guests .calendar {
+      display: grid;
+      grid-template-rows: 50px 300px;
+      width: 400px;
+      border: 1px solid #000000;
+      -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2); }
+      main .dear_guests .calendar .calendar_top {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-family: 'Arno Pro Light';
+        text-transform: uppercase;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        border-bottom: 1px solid #000000; }
+        main .dear_guests .calendar .calendar_top .mounth {
+          text-align: left;
+          font-size: 28px;
+          padding-left: 25px; }
+        main .dear_guests .calendar .calendar_top .year {
+          text-align: right;
+          padding-right: 25px;
+          font-size: 32px; }
+      main .dear_guests .calendar .calendar_days {
+        font-family: 'Arno Pro Light';
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr); }
+        main .dear_guests .calendar .calendar_days .day {
+          color: #000000;
+          display: grid;
+          font-weight: lighter;
+          font-size: 32px;
+          text-align: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        main .dear_guests .calendar .calendar_days .day:hover {
+          cursor: default; }
+        main .dear_guests .calendar .calendar_days .day_out_month {
+          color: #6C6F74;
+          display: grid;
+          font-weight: lighter;
+          font-size: 32px;
+          text-align: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+        main .dear_guests .calendar .calendar_days .day_out_monthay:hover {
+          cursor: default; }
+        main .dear_guests .calendar .calendar_days svg {
+          position: absolute;
+          left: 229px;
+          top: 114px; }
+        main .dear_guests .calendar .calendar_days svg:hover {
+          cursor: progress;
+          fill: #9E9E9E; }
+  main .top_info {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 1fr 625px 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center; }
+    main .top_info span {
+      width: 90px;
+      height: 1px;
+      background-color: #000000; }
+    main .top_info h2 {
+      text-transform: uppercase;
+      font-size: 68px;
+      font-family: 'Arno Pro Light';
+      font-weight: lighter; }
+  main .second_info {
+    font-family: 'Room';
+    src: url(/assets/style/fonts/room-thin.ttf);
+    margin-top: 25px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 25px; }
 
 /*# sourceMappingURL=style.css.map */

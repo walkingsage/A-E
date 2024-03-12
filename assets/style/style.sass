@@ -1,4 +1,4 @@
-@import url(fonts.css)
+@import fonts
 
 *
     padding: 0
@@ -27,13 +27,14 @@ body
     display: flex
     flex-direction: column
     align-items: center
+    background-attachment: fixed
 
 header
     width: 100%
     height: 100vh
     display: grid
     grid-template-columns: 1fr 1fr 1fr
-    grid-template-rows: 80px 1fr 40px 50px
+    grid-template-rows: 65px 1fr 60px 75px
 
     nav
         width: 100%
@@ -57,7 +58,8 @@ header
                     height: 100%
                     display: grid
                     text-transform: uppercase
-                    font-size: 14px
+                    font-size: 16px
+                    +room
 
             li:hover
                 cursor: pointer
@@ -65,11 +67,28 @@ header
 
     .Name_container
         display: grid
-        grid-template-rows: 80px 2px 30px
+        grid-template-rows: 105px 2px 30px
         align-content: end
+        text-align: center
 
         p
             color: #ffffff
+
+        .main_word
+            +richmond
+            font-size: 90px
+
+        .name
+            +room
+            font-size: 30px
+            text-transform: uppercase
+            display: flex
+            align-items: end
+
+        span
+            width: 100%
+            height: 100%
+            background: #ffffff
 
     .main_word
 
@@ -80,3 +99,69 @@ header
     .Right_item
         grid-area: 2/3/3/4
         justify-content: right
+
+    .container_btn_go_to_anket
+        width: 100%
+        height: 100%
+        grid-area: 3/2/4/3
+        display: grid
+        align-items: start
+        justify-items: center
+
+        .btn_go_to_anket
+            background: #ffffff
+            border-radius: 20px
+            width: 300px
+            height: 45px
+            display: grid
+            align-items: center
+            justify-items: center
+            text-transform: uppercase
+            font-size: 16px
+            +room
+            -webkit-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2)
+            -moz-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2)
+            box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2)
+
+        .btn_go_to_anket:hover
+            cursor: pointer
+
+    .timer
+        height: 101%
+        width: 680px
+        position: relative
+        grid-area: 4/2/5/3
+        display: grid
+        justify-items: center
+        align-items: center
+        background-color: #ffffff
+        border-radius: 20px 20px 0 0
+
+        .timer_container
+            width: 640px
+            position: absolute
+            top: 0px
+            left: 0px
+            display: grid
+            margin: 20px
+            grid-template-columns: repeat(5,1fr)
+            grid-gap: 25px
+
+            .timer_values
+                +arno
+                color: #ffffff
+                text-transform: uppercase
+                display: grid
+                grid-template-rows: 50% 50%
+                row-gap: 5px
+                width: 100%
+                height: 108px
+                background-image: url(/assets/images/TimerBG.jpg)
+                background-repeat: no-repeat
+                background-size: cover
+                text-align: center
+                border-radius: 10px
+main
+    height: 500px
+    width: 100%
+    background-color: #ffffff

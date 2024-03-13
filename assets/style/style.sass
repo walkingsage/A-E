@@ -272,21 +272,28 @@ main
 
     .top_info
         margin-top: 35px
-        display: grid
-        grid-template-columns: 1fr 625px 1fr
+        display: flex
         align-items: center
-        justify-items: center
+        justify-content: center
 
         span
             width: 90px
             height: 1px
             background-color: #000000
+            margin-top: 20px
 
         h2
             text-transform: uppercase
-            font-size: 68px
+            font-size: 58px
             +arno
             font-weight: lighter
+            text-align: center
+
+        .left
+            margin-right: 20px
+
+        .right
+            margin-left: 20px
 
     .second_info
         +room
@@ -294,3 +301,47 @@ main
         margin-bottom: 40px
         text-align: center
         font-size: 25px
+
+    .daily_map
+        display: flex
+        align-items: center
+        align-content: center
+        justify-items: center
+        flex-direction: column
+        padding-top: 65px
+        background-color: #ffffff
+
+        .programm_day_map
+            max-width: 1140px
+            margin-top: 80px
+            display: grid
+            position: relative
+            grid-template-columns: repeat(5,1fr)
+
+            .line
+                position: absolute
+
+            .container_event
+                display: grid
+                grid-template-rows: 70px 95px 200px
+                justify-items: center
+
+                .time
+                    +room
+                    font-size: 32px
+                    text-align: center
+
+                .circle
+                    width: 95px
+                    height: 95px
+                    border: 2px solid #000000
+                    border-radius: 50%
+                    display: flex
+                    justify-content: center
+                    align-items: center
+
+                .event_name
+                    padding-top: 20px
+                    +room
+                    font-size: 24px
+                    text-align: center

@@ -285,7 +285,7 @@ main {
           cursor: progress;
           fill: #9E9E9E; }
   main .top_info {
-    margin-top: 35px;
+    padding-top: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -331,7 +331,6 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 65px;
     padding-bottom: 65px;
     background-color: #ffffff; }
     main .daily_map .programm_day_map {
@@ -383,5 +382,92 @@ main {
           src: url(/assets/style/fonts/room-thin.ttf);
           font-size: 24px;
           text-align: center; }
+  main .dress_code {
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    main .dress_code .dress_colors {
+      margin-top: 50px;
+      position: static;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 148px;
+      margin-bottom: 50px;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      main .dress_code .dress_colors .bg_gradients {
+        position: absolute;
+        width: 100%;
+        height: 148px;
+        display: grid;
+        grid-template-columns: 1fr repeat(4, 243px) 1fr;
+        z-index: 0; }
+        main .dress_code .dress_colors .bg_gradients .colour_1 {
+          background: #ffffff;
+          background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#f3f3f3));
+          background: linear-gradient(90deg, #ffffff 0%, #f3f3f3 100%); }
+        main .dress_code .dress_colors .bg_gradients .colour_2 {
+          background: #f3f3f3;
+          background: -webkit-gradient(linear, left top, right top, from(#f3f3f3), to(#cfcecc));
+          background: linear-gradient(90deg, #f3f3f3 0%, #cfcecc 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3f3f3",endColorstr="#cfcecc",GradientType=1); }
+        main .dress_code .dress_colors .bg_gradients .colour_3 {
+          background: #cfcecc;
+          background: -webkit-gradient(linear, left top, right top, from(#cfcecc), to(#b8bbc0));
+          background: linear-gradient(90deg, #cfcecc 0%, #b8bbc0 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cfcecc",endColorstr="#b8bbc0",GradientType=1); }
+        main .dress_code .dress_colors .bg_gradients .colour_4 {
+          background: #b8bbc0;
+          background: -webkit-gradient(linear, left top, right top, from(#b8bbc0), to(#6c6f74));
+          background: linear-gradient(90deg, #b8bbc0 0%, #6c6f74 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b8bbc0",endColorstr="#6c6f74",GradientType=1); }
+        main .dress_code .dress_colors .bg_gradients .colour_5 {
+          background: #6c6f74;
+          background: -webkit-gradient(linear, left top, right top, from(#6c6f74), to(#000000));
+          background: linear-gradient(90deg, #6c6f74 0%, #000000 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6c6f74",endColorstr="#000000",GradientType=1); }
+        main .dress_code .dress_colors .bg_gradients .colour_6 {
+          background: #000000;
+          background: -webkit-gradient(linear, left top, right top, from(#000000), to(#ffffff));
+          background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); }
+      main .dress_code .dress_colors .bg_circles {
+        z-index: 1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 148px 93px 148px 93px 148px 93px 148px 93px 148px 1fr; }
+        main .dress_code .dress_colors .bg_circles .circle_colour {
+          height: 148px;
+          width: 148px;
+          border-radius: 50%; }
+        main .dress_code .dress_colors .bg_circles .circle_colour_1 {
+          grid-column: 2/3;
+          background-image: url(/assets/images/1bgdc.jpg);
+          background-size: cover; }
+        main .dress_code .dress_colors .bg_circles .circle_colour_2 {
+          grid-column: 4/5;
+          background-image: url(/assets/images/2bgdc.jpg);
+          background-size: cover; }
+        main .dress_code .dress_colors .bg_circles .circle_colour_3 {
+          grid-column: 6/7;
+          background-image: url(/assets/images/3bgdc.jpg);
+          background-size: cover; }
+        main .dress_code .dress_colors .bg_circles .circle_colour_4 {
+          grid-column: 8/9;
+          background-image: url(/assets/images/4bgdc.jpg);
+          background-size: cover; }
+        main .dress_code .dress_colors .bg_circles .circle_colour_5 {
+          grid-column: 10/11;
+          background-image: url(/assets/images/5bgdc.jpg);
+          background-size: cover; }
+  main .guest_anket {
+    background-color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

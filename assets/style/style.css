@@ -468,6 +468,122 @@ main {
           background-image: url(/assets/images/5bgdc.jpg);
           background-size: cover; }
   main .guest_anket {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    main .guest_anket .guest_anket_form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start; }
+      main .guest_anket .guest_anket_form .input {
+        margin-top: 58px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        main .guest_anket .guest_anket_form .input .label_top {
+          font-family: 'Room';
+          src: url(/assets/style/fonts/room-thin.ttf);
+          font-size: 24px;
+          margin-bottom: 15px; }
+        main .guest_anket .guest_anket_form .input .text_input {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          font-family: 'Room';
+          src: url(/assets/style/fonts/room-thin.ttf);
+          height: 40px;
+          width: 100%;
+          font-size: 20px;
+          padding-left: 20px; }
+        main .guest_anket .guest_anket_form .input .radio_buttons {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          row-gap: 20px; }
+          main .guest_anket .guest_anket_form .input .radio_buttons .r_b {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b label {
+              font-family: 'Room';
+              src: url(/assets/style/fonts/room-thin.ttf);
+              font-size: 20px;
+              grid-column: 2/3;
+              display: inline-block;
+              cursor: pointer;
+              position: relative;
+              padding-left: 40px;
+              -webkit-user-select: none;
+                 -moz-user-select: none;
+                  -ms-user-select: none;
+                      user-select: none;
+              margin-right: 0px; }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b label:before {
+              content: "";
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              border: 1px solid #000000;
+              border-radius: 50%; }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b .radio {
+              display: none; }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b input[type=radio]:checked + label:before {
+              background-image: url(/assets/images/doted.svg);
+              background-repeat: no-repeat;
+              background-position-x: 2px;
+              background-position-y: 2px;
+              background-size: 16px; }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b label:hover:before {
+              -webkit-filter: brightness(120%);
+                      filter: brightness(120%); }
+            main .guest_anket .guest_anket_form .input .radio_buttons .r_b input[type=radio]:disabled + label:before {
+              border-color: #313131; }
+        main .guest_anket .guest_anket_form .input .checkbox {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

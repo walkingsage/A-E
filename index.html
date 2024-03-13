@@ -315,10 +315,52 @@
             </div>
             <form class="guest_anket_form" action="" method="post" name="guest_anket_form">
                 <div class="input">
-                    <label for="fio">Фамилия Имя</label>
-                    <input type="text" name="fio" placeholder="Иван Иванов/Мария Иванова">
+                    <label class="label_top" for="fio">Фамилия Имя</label>
+                    <input class="text_input" type="text" id="fio" name="fio" placeholder="Иван Иванов/Мария Иванова">
                 </div>
-                
+                <div class="input">
+                    <label class="label_top">Сможете ли вы присутствовать?</label>
+                    <div class="radio_buttons">
+                        <div class="r_b"><input class="radio" type="radio" id="yes" value="Смогу/сможем присутствовать" name="can_you_visit"><label for="yes">Смогу/сможем присутствовать</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="idk" value="Затрудняюсь ответить" name="can_you_visit"><label for="idk">Затрудняюсь ответить</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="no" value="Не смогу придти" name="can_you_visit"><label for="no">Не смогу придти</label></div>
+                    </div>
+                </div>
+                <div class="input">
+                    <label class="label_top">Будут ли с Вами дети?</label>
+                    <div class="radio_buttons">
+                        <div class="r_b"><input class="radio" type="radio" id="with_child" value="Да" name="child_with_you"><label for="with_child">Да</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="no_child" value="Нет" name="child_with_you"><label for="no_child">Нет</label></div>
+                    </div>
+                </div>
+                <div class="input">
+                    <label for="child_info" class="label_top">Их имя фамилия и возраст</label>
+                    <input class="text_input" type="text" id="child_info"  name="child_info" placeholder="Сергей Иванов - 5 лет, Алексей Иванов - 10 лет и т.д.">
+                </div>
+                <div class="input">
+                    <label class="label_top">Есть ли аллергия на определенные продукты?</label>
+                    <div class="radio_buttons">
+                        <div class="r_b"><input class="radio" type="radio" id="with_Allergy" value="Да" name="you_are_allergy"><label for="with_Allergy">Да</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="without_allergy" value="Нет" name="you_are_allergy"><label for="without_allergy">Нет</label></div>
+                    </div>
+                </div>
+                <div class="input">
+                    <label class="label_top" for="allergy_list">Перечислите список продуктов на которые у Вас аллергия:</label>
+                    <input class="text_input" type="text" id="allergy_list" name="allergy_list" placeholder="Молоко, зелень, цитрус, перец ...">
+                </div>
+                <div class="input">
+                    <label class="label_top">Предпочтения по алкоголю</label>
+                    <div class="checkbox">
+                        <div class="ch_b"><input type="checkbox" id="champane" value="Шампанское" name="alco_select"/><label for="champane">Шампанское</label></div>
+                        <div class="ch_b"><input type="checkbox" id="white_dry_vine" value="Белое сухое вино" name="alco_select"/><label for="white_dry_vine">Белое сухое вино</label></div>
+                        <div class="ch_b"><input type="checkbox" id="red_semi_sweet_vine" value="Красное полусладкое вино" name="alco_select"/><label for="red_semi_sweet_vine">Красное полусладкое вино</label></div>
+                        <div class="ch_b"><input type="checkbox" id="konjac" value="Коньяк" name="alco_select"/><label for="konjac">Коньяк</label></div>
+                        <div class="ch_b"><input type="checkbox" id="vodka" value="Водка" name="alco_select"/><label for="vodka">Водка</label></div>
+                        <div class="ch_b"><input type="checkbox" id="non_alcohol" value="Безалкогольные напитки" name="alco_select"/><label for="non_alcohol">Безалкогольные напитки</label></div>
+                        <div class="ch_b"><input type="checkbox" id="drink_all" value="Пью все" name="alco_select"/><label for="drink_all">Пью все</label></div>
+                    </div>
+                </div>
+                <button type="submit" class="submit_btn">Отправить</button>
             </form>
         </div>
     </main>

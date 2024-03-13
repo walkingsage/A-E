@@ -457,3 +457,85 @@ main
 
     .guest_anket
         background-color: #ffffff
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        .guest_anket_form
+            display: flex
+            flex-direction: column
+            align-items: start
+            justify-content: start
+
+            .input
+                margin-top: 58px
+                display: flex
+                flex-direction: column
+                width: 100%
+
+                .label_top
+                    +room
+                    font-size: 24px
+                    margin-bottom: 15px
+
+                .text_input
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    +room
+                    height: 40px
+                    width: 100%
+                    font-size: 20px
+                    padding-left: 20px
+
+                .radio_buttons
+                    display: flex
+                    flex-direction: column
+                    row-gap: 20px
+
+                    .r_b
+                        display: flex
+
+                        label
+                            +room
+                            font-size: 20px
+                            grid-column: 2/3
+                            display: inline-block
+                            cursor: pointer
+                            position: relative
+                            padding-left: 40px
+                            user-select: none
+                            margin-right: 0px
+
+                        label:before
+                            content: ""
+                            display: inline-block
+                            width: 20px
+                            height: 20px
+                            position: absolute
+                            left: 0px
+                            top: 0px
+                            border: 1px solid #000000
+                            border-radius: 50%
+
+                        .radio
+                            display: none
+
+                        input[type=radio]:checked + label:before
+                            background-image: url(/assets/images/doted.svg)
+                            background-repeat: no-repeat
+                            background-position-x: 2px
+                            background-position-y: 2px
+                            background-size: 16px
+
+                        label:hover:before
+                            filter: brightness(120%)
+
+                        input[type=radio]:disabled + label:before
+                            border-color: #313131
+
+                .checkbox
+                    display: flex
+                    flex-direction: column

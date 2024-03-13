@@ -332,19 +332,32 @@ main {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 65px;
+    padding-bottom: 65px;
     background-color: #ffffff; }
     main .daily_map .programm_day_map {
-      max-width: 1140px;
+      max-width: 90%;
       margin-top: 80px;
       display: grid;
       position: relative;
-      grid-template-columns: repeat(5, 1fr); }
-      main .daily_map .programm_day_map .line {
-        position: absolute; }
+      grid-template-columns: repeat(5, 1fr);
+      gap: 100px; }
+      main .daily_map .programm_day_map .spans {
+        position: absolute;
+        top: 116px;
+        left: 137px;
+        display: grid;
+        width: 79%;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 94px; }
+        main .daily_map .programm_day_map .spans .line {
+          height: 2px;
+          width: 100%;
+          background-color: #000000; }
       main .daily_map .programm_day_map .container_event {
         display: grid;
-        grid-template-rows: 70px 95px 200px;
-        justify-items: center; }
+        grid-template-rows: 70px 95px 100px;
+        justify-items: center;
+        width: 180px; }
         main .daily_map .programm_day_map .container_event .time {
           font-family: 'Room';
           src: url(/assets/style/fonts/room-thin.ttf);

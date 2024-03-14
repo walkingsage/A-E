@@ -457,7 +457,7 @@ main
 
     .guest_anket
         background-color: #ffffff
-
+        margin-bottom: 200px
         display: flex
         flex-direction: column
         justify-content: center
@@ -602,3 +602,53 @@ main
                 .submit_btn:hover
                     background-color: #252525
                     border: none
+
+    .details
+        background-color: #ffffff
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding-bottom: 100px
+
+        a
+            width: 300px
+            text-decoration: none
+            height: 50px
+            display: flex
+            align-items: center
+            justify-content: center
+            text-align: center
+            color: #ffffff
+            background-color: #000
+            border-radius: 20px
+            font-size: 24px
+            +room
+
+        a:hover
+            background-color: #1b1b1b
+
+        .contact
+            display: flex
+            flex-direction: column
+            margin-top: 30px
+
+            .name
+                +room
+                font-size: 36px
+                text-align: center
+
+            a
+                margin-top: 20px
+
+footer
+    height: 200px
+    width: 100%
+    background-color: #000
+    +room
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 24px
+    color: #ffffff
+    text-align: center

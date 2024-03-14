@@ -469,6 +469,7 @@ main {
           background-size: cover; }
   main .guest_anket {
     background-color: #ffffff;
+    margin-bottom: 200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,5 +652,78 @@ main {
         main .guest_anket .guest_anket_form .btn_send .submit_btn:hover {
           background-color: #252525;
           border: none; }
+  main .details {
+    background-color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 100px; }
+    main .details a {
+      width: 300px;
+      text-decoration: none;
+      height: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      background-color: #000;
+      border-radius: 20px;
+      font-size: 24px;
+      font-family: 'Room';
+      src: url(/assets/style/fonts/room-thin.ttf); }
+    main .details a:hover {
+      background-color: #1b1b1b; }
+    main .details .contact {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-top: 30px; }
+      main .details .contact .name {
+        font-family: 'Room';
+        src: url(/assets/style/fonts/room-thin.ttf);
+        font-size: 36px;
+        text-align: center; }
+      main .details .contact a {
+        margin-top: 20px; }
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #000;
+  font-family: 'Room';
+  src: url(/assets/style/fonts/room-thin.ttf);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

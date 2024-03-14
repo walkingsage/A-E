@@ -1,0 +1,62 @@
+@media screen and (max-width: 1450px) {
+  .programm_day_map {
+    gap: 30px !important; }
+    .programm_day_map .spans {
+      gap: 35px !important; }
+      .programm_day_map .spans .line {
+        width: 67% !important; } }
+@media screen and (max-width: 1150px) {
+  header nav ul li a {
+    font-size: 13px !important; }
+  header .timer {
+    width: 560px !important; }
+    header .timer .timer_container {
+      width: 520px !important; }
+      header .timer .timer_container .timer_values {
+        height: 84px !important; }
+        header .timer .timer_container .timer_values .numbers_timer {
+          font-size: 26px !important; }
+        header .timer .timer_container .timer_values .timer_name_value {
+          font-size: 12px !important; }
+
+  .daily_map .top_info h2 {
+    max-width: 544px; }
+  .daily_map .top_info span {
+    margin-top: 64px; }
+  .daily_map .programm_day_map {
+    gap: 10px !important; }
+    .daily_map .programm_day_map .spans {
+      top: 74px !important;
+      gap: 16px !important;
+      left: 103px !important; }
+      .daily_map .programm_day_map .spans .line {
+        width: 61% !important;
+        grid-template-rows: 40px 69px 74px !important; }
+    .daily_map .programm_day_map .container_event {
+      width: 140px !important;
+      grid-template-rows: 41px 70px 72px !important; }
+      .daily_map .programm_day_map .container_event .time {
+        font-size: 23px !important; }
+      .daily_map .programm_day_map .container_event .circle {
+        width: 70px !important;
+        height: 70px !important; }
+      .daily_map .programm_day_map .container_event .event_name {
+        font-size: 16px !important; }
+      .daily_map .programm_day_map .container_event svg {
+        width: 60%; }
+      .daily_map .programm_day_map .container_event .location {
+        width: 25px; }
+
+  .dress_code .dress_colors {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important; }
+    .dress_code .dress_colors .bg_gradients {
+      height: 100px !important;
+      grid-template-columns: 1fr repeat(4, 149px) 1fr !important; }
+    .dress_code .dress_colors .bg_circles {
+      grid-template-columns: 1fr 100px 50px 100px 50px 100px 50px 100px 50px 100px 1fr !important; }
+      .dress_code .dress_colors .bg_circles .circle_colour {
+        height: 100px !important;
+        width: 100px !important; } }
+
+/*# sourceMappingURL=media.css.map */

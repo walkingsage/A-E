@@ -47,6 +47,8 @@
       .daily_map .programm_day_map .container_event .location {
         width: 25px; }
 
+  .dress_code .dress_images {
+    grid-template-rows: 300px 300px !important; }
   .dress_code .dress_colors {
     margin-top: 10px !important;
     margin-bottom: 10px !important;
@@ -127,6 +129,10 @@
       .daily_map .programm_day_map .container_event .rings {
         width: 70% !important; }
 
+  .dress_code .dress_images {
+    grid-template-rows: 200px 200px !important; }
+    .dress_code .dress_images div:nth-child(2) {
+      background-size: cover !important; }
   .dress_code .dress_colors .bg_gradients {
     display: flex !important;
     flex-direction: column;
@@ -143,5 +149,222 @@
 
   .guest_anket .guest_anket_form {
     max-width: 80% !important; } }
+@media screen and (max-width: 740px) {
+  body {
+    position: relative; }
+    body .burger {
+      position: fixed;
+      left: 0px;
+      top: 20%;
+      height: 50px;
+      width: 50px;
+      background-color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0px 20px 20px 0px;
+      z-index: 11; }
+
+  main .top_info span {
+    width: 60px !important; }
+  main h2 {
+    font-size: 42px !important; }
+  main .second_info {
+    max-width: 80%;
+    align-self: center; }
+
+  .dear_guests .calendar {
+    grid-template-rows: 40px 290px !important;
+    width: 340px !important; }
+    .dear_guests .calendar .calendar_days svg {
+      left: 190px !important;
+      top: 109px !important; }
+
+  header {
+    grid-template-rows: 30% 1fr 60px 100px 30px !important; }
+    header .Name_container {
+      display: none !important; }
+    header .main_ae {
+      display: block;
+      grid-area: 1/2/2/3;
+      align-self: center;
+      justify-self: center; }
+    header nav {
+      position: fixed;
+      left: -100%;
+      top: 0px;
+      z-index: 10;
+      width: auto;
+      height: 100vh; }
+      header nav ul {
+        height: 100vh;
+        grid-template-rows: repeat(6, 16.6%) !important;
+        grid-template-columns: 1fr !important; }
+        header nav ul li {
+          border-bottom: 1px solid #fff;
+          padding-left: 20px;
+          padding-right: 20px; }
+          header nav ul li a {
+            font-size: 22px !important; }
+      header nav li:last-child {
+        border: none !important; }
+    header .timer {
+      border-radius: 20px !important;
+      width: 480px !important; }
+      header .timer .timer_container {
+        width: 460px !important;
+        margin: 10px;
+        grid-gap: 10px; }
+        header .timer .timer_container .timer_values {
+          height: 80px !important; }
+
+  .daily_map .top_info h2 {
+    max-width: 380px !important; } }
+@media screen and (max-width: 540px) {
+  body {
+    background-image: none !important; }
+    body .bg_ios {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      background-image: url(/assets/images/AW8z38IBztw.jpg);
+      z-index: -1;
+      background-size: cover;
+      background-position: center center; }
+
+  main .top_info {
+    padding-top: 40px !important; }
+    main .top_info span {
+      width: 35px !important;
+      margin-top: 0px !important; }
+    main .top_info .left {
+      margin-right: 10px !important; }
+    main .top_info .right {
+      margin-left: 10px !important; }
+  main h2 {
+    font-size: 29px !important; }
+  main .second_info {
+    font-size: 18px !important; }
+
+  .dear_guests {
+    padding-top: 40px !important;
+    margin-bottom: 100px !important; }
+    .dear_guests svg {
+      width: 100px !important; }
+    .dear_guests .calendar {
+      width: 300px !important;
+      grid-template-rows: 40px 255px !important; }
+      .dear_guests .calendar .calendar_days .day {
+        font-size: 27px !important; }
+      .dear_guests .calendar .calendar_days svg {
+        left: 170px !important;
+        top: 91px !important;
+        width: 53px !important; }
+    .dear_guests .bottom_text {
+      max-width: 80%;
+      font-size: 20px !important; }
+
+  header {
+    grid-template-rows: 30% 1fr 60px 83px 80px !important; }
+    header .timer {
+      width: 380px !important; }
+      header .timer .timer_container {
+        width: 360px !important; }
+        header .timer .timer_container .timer_values {
+          height: 63px !important; }
+          header .timer .timer_container .timer_values .numbers_timer {
+            font-size: 23px !important; }
+          header .timer .timer_container .timer_values .timer_name_value {
+            font-size: 11px !important; }
+
+  .daily_map .top_info {
+    max-width: 323px !important; }
+    .daily_map .top_info span {
+      margin-top: 32px !important; }
+  .daily_map .programm_day_map .spans {
+    left: 82px !important;
+    top: 85px !important;
+    gap: 85px !important; }
+  .daily_map .programm_day_map .container_event {
+    grid-template-columns: 45% 55% !important; }
+    .daily_map .programm_day_map .container_event .time {
+      font-size: 27px !important; }
+    .daily_map .programm_day_map .container_event .circle {
+      justify-self: center;
+      width: 85px !important;
+      height: 85px !important; }
+    .daily_map .programm_day_map .container_event .event_name {
+      font-size: 21px !important; }
+
+  .guest_anket {
+    margin-bottom: 100px !important; }
+    .guest_anket .guest_anket_form .input:nth-child(1) {
+      margin-top: 0px !important; }
+    .guest_anket .guest_anket_form .submit_btn {
+      height: 45px !important;
+      width: 260px !important; }
+    .guest_anket .guest_anket_form .input {
+      margin-top: 50px !important; }
+      .guest_anket .guest_anket_form .input .text_input {
+        font-size: 17px !important; }
+      .guest_anket .guest_anket_form .input .radio_buttons .r_b label {
+        font-size: 18px !important;
+        padding-left: 30px !important; }
+      .guest_anket .guest_anket_form .input .radio_buttons .r_b label:before {
+        width: 15px !important;
+        height: 15px !important; }
+      .guest_anket .guest_anket_form .input .radio_buttons .r_b input[type=radio]:checked + label:before {
+        background-position-x: 1px !important;
+        background-position-y: 1px !important;
+        background-size: 13px !important; }
+      .guest_anket .guest_anket_form .input .label_top {
+        font-size: 20px !important; }
+
+  .details {
+    padding-bottom: 60px !important; }
+    .details a {
+      height: 40px !important;
+      font-size: 20px !important;
+      width: 220px !important; }
+
+  footer {
+    font-size: 18px !important; } }
+@media screen and (max-width: 410px) {
+  body .burger {
+    height: 40px;
+    width: 40px; }
+    body .burger svg {
+      width: 20px !important; }
+
+  header {
+    grid-template-rows: 30% 1fr 60px 70px 80px !important; }
+    header nav {
+      max-width: 215.6px; }
+    header .timer {
+      width: 324px !important; }
+      header .timer .timer_container {
+        width: 304px !important; }
+        header .timer .timer_container .timer_values {
+          height: 50px !important;
+          row-gap: 1px !important; }
+          header .timer .timer_container .timer_values .numbers_timer {
+            font-size: 19px !important; }
+          header .timer .timer_container .timer_values .timer_name_value {
+            font-size: 8px !important; }
+
+  .daily_map .top_info h2 {
+    font-size: 25px !important; }
+  .daily_map .programm_day_map .spans {
+    left: 71px !important; }
+  .daily_map .programm_day_map .container_event .event_name {
+    font-size: 17px !important; }
+
+  .dress_code .chrustal {
+    background-size: cover !important; }
+
+  footer {
+    font-size: 14px !important;
+    height: 115px !important; } }
 
 /*# sourceMappingURL=media.css.map */

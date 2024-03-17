@@ -1,0 +1,18 @@
+@media screen and (max-width: 950px) {
+  .animation_start .line {
+    -webkit-animation: slide-in-left_column 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
+    animation: slide-in-left_column 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important; }
+
+  .animation_start .circle {
+    -webkit-animation: scaler 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
+    animation: scaler 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important; }
+
+  .animation_start .time {
+    -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
+    animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important; }
+
+  .animation_start .event_name {
+    -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
+    animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important; } }
+
+/*# sourceMappingURL=animation_media.css.map */

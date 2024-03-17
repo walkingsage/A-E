@@ -7,6 +7,11 @@
   font-stretch: normal;
   unicode-range: U+0020-02DC; }
 @font-face {
+  font-family: 'Room';
+  src: local("Room Thin"), local("Room-Thin"), url("Room-Thin.woff2") format("woff2"), url("Room-Thin.woff") format("woff"), url("Room-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal; }
+@font-face {
   font-family: 'Arno Pro ';
   src: local("/assets/style/Arno Pro  Display Regular"), local("Arno-Pro--Display-Regular"), url("/assets/style/ArnoPro-Display.woff2") format("woff2"), url("/assets/style/ArnoPro-Display.woff") format("woff"), url("/assets/style/ArnoPro-Display.ttf") format("truetype");
   font-weight: 400;

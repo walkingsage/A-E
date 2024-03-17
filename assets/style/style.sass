@@ -1,10 +1,13 @@
 @import fonts
+@import animation
+@import animation_media
 
 *
     padding: 0
     margin: 0
     box-sizing: border-box
     -webkit-tap-highlight-color: transparent
+    behavior: smooth !important
 
 html
     scroll-behavior: smooth !important
@@ -24,12 +27,36 @@ ul,li
 body
     background-image: url(/assets/images/AW8z38IBztw.jpg)
     background-repeat: no-repeat
-    background-size: 100%
+    background-attachment: fixed !important
+    background-size: cover !important
     background-position-y: 20%
     display: flex
     flex-direction: column
     align-items: center
     background-attachment: fixed
+
+    .bg_ios
+        display: none
+
+    .burger
+        display: none
+
+    .preloader
+        position: fixed
+        display: flex
+        justify-content: center
+        width: 100vw
+        height: 100vh
+        align-items: center
+        z-index: 1000
+        background-color: #ffffff
+
+        svg
+            path
+                fill: #000
+
+    .preloader_stop
+        display: none !important
 
 header
     width: 100%
@@ -37,6 +64,9 @@ header
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-rows: 65px 1fr 60px 75px
+
+    .main_ae
+        display: none
 
     nav
         width: 100%
@@ -363,6 +393,7 @@ main
                     background-color: #000000
 
             .container_event
+                transform-style: flat
                 display: grid
                 grid-template-rows: 70px 95px 100px
                 justify-items: center
@@ -392,6 +423,48 @@ main
         background-color: #ffffff
         display: flex
         flex-direction: column
+
+        .dress_images
+            display: grid
+            width: 100%
+            grid-template-columns: 25% 25% 50%
+            grid-template-rows: 400px 400px
+
+            div:nth-child(1)
+                grid-area: 1/1/2/2
+                width: 100%
+                background-image: url(/assets/images/chrustal.jpg)
+                background-size: cover
+                background-size: 110%
+                background-position-x: center
+                background-position-y: center
+
+            div:nth-child(2)
+                grid-area: 1/2/2/3
+                width: 100%
+                background-image: url(/assets/images/flowers.jpg)
+                background-size: cover
+                background-size: 110%
+                background-position-x: center
+                background-position-y: center
+
+            div:nth-child(3)
+                grid-area: 2/1/3/3
+                width: 100%
+                background-image: url(/assets/images/fudjer.jpg)
+                background-size: cover
+                background-size: 110%
+                background-position-x: center
+                background-position-y: center
+
+            div:nth-child(4)
+                grid-area: 1/3/3/4
+                width: 100%
+                background-image: url(/assets/images/lustra.jpg)
+                background-size: cover
+                background-size: 110%
+                background-position-x: center
+                background-position-y: center
 
         .dress_colors
             margin-top: 50px
@@ -611,6 +684,7 @@ main
                             background-position-y: 2px
 
             .btn_send
+                -webkit-appearance: none
                 width: 100%
                 height: 50px
                 display: flex

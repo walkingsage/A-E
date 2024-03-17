@@ -1,6 +1,51 @@
 const anchors = [].slice.call(document.querySelectorAll('a[class^="scroll-to"')),
 animationTime = 300,
 framesCount = 20;
+let burger = document.querySelector('.burger'),
+navigation = document.querySelector('.nav'),
+arrow = document.querySelector('.arrow'),
+main_words_anim = document.querySelectorAll('.active_animations');
+
+if (main_words_anim.length > 0){
+    window.addEventListener('scroll', anomScrollH2);
+    function anomScrollH2(){
+        for (let index = 0; index < main_words_anim.length; index++) {
+            const animItem = main_words_anim[index];
+            const animItemHight = animItem.offsetHeight;
+            const animItemoffSet = offset(animItem).top;
+            const animStart = 4;
+
+            let animItemPoint = window.innerHeight - animItemHight/animStart;
+            if(animItemHight > window.innerHeight){
+                animItemPoint = window.innerHeight - window.innerHeight/animStart;
+            }
+
+            if((pageYOffset > animItemoffSet - animItemPoint) && pageYOffset < (animItemoffSet+animItemHight)){
+                animItem.classList.add('animation_start');
+            } else{
+                animItem.classList.remove('animation_start');
+            }
+        }
+    }
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft}
+    }
+}
+
+
+window.onload = function() {
+    let preloader = document.querySelector('.preloader');
+    setInterval(function() {
+          preloader.classList.remove('preloader_active');
+          preloader.classList.add('preloader_hide');
+    }, 4000);
+    setInterval(function() {
+        preloader.classList.add('preloader_stop');
+  }, 5000);
+}
 
 anchors.forEach(function(item) {
   // каждому якорю присваиваем обработчик события
@@ -8,27 +53,9 @@ anchors.forEach(function(item) {
     // убираем стандартное поведение
     e.preventDefault();
     
-    console.log(item.getAttribute('id'))
-    // для каждого якоря берем соответствующий ему элемент и определяем его координату Y
-    let coordY = document.querySelector(`.${item.getAttribute('id')}`).getBoundingClientRect().top + window.pageYOffset;
-    
-    // запускаем интервал, в котором
-    let scroller = setInterval(function() {
-      // считаем на сколько скроллить за 1 такт
-      let scrollBy = coordY / framesCount;
-      
-      // если к-во пикселей для скролла за 1 такт больше расстояния до элемента
-      // и дно страницы не достигнуто
-      if(scrollBy > window.pageYOffset - coordY && window.innerHeight + window.pageYOffset < document.body.offsetHeight) {
-        // то скроллим на к-во пикселей, которое соответствует одному такту
-        window.scrollBy(0, scrollBy);
-      } else {
-        // иначе добираемся до элемента и выходим из интервала
-        window.scrollTo(0, coordY);
-        clearInterval(scroller);
-      }
-    // время интервала равняется частному от времени анимации и к-ва кадров
-    }, animationTime / framesCount);
+    console.log(item.getAttribute('id'));
+
+    document.querySelector(`.${item.getAttribute('id')}`).scrollIntoView({behavior: "smooth",block: 'start'});
   });
 });
 
@@ -74,27 +101,23 @@ document.addEventListener('DOMContentLoaded',function () {
     countdownTimer();
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
-  });
+});
 
-
-    // document.querySelectorAll('a[class^="scroll-to"').forEach(link => {
-
-    //     link.addEventListener('click', function(e) {
-    //         e.preventDefault();
-
-    //         let id = this.getAttribute('id');
-
-    //         const scrollTarget = document.querySelector(`.${id}`);
-
-    //         //const topOffset = document.querySelector(`.${id}`).offsetHeight;
-
-    //         const topOffset = 0;
-    //         const elementPosition = scrollTarget.getBoundingClientRect().top;
-    //         const offsetPosition = elementPosition - topOffset;
-
-    //         window.scrollIntoView({
-    //             top: offsetPosition,
-    //             behavior: 'smooth'
-    //         });
-    //     });
-    // });
+burger.addEventListener('click', () =>{
+    if (burger.classList.contains('burger_open')){
+        arrow.classList.remove('arrow_open');
+        burger.classList.add('burger_close');
+        burger.classList.remove('burger_open');
+        navigation.classList.remove('nav_show');
+        navigation.classList.add('nav_hide');
+        arrow.classList.add('arrow_close')
+    }
+    else{
+        arrow.classList.remove('arrow_close');
+        arrow.classList.add('arrow_open');
+        burger.classList.remove('burger_close');
+        navigation.classList.remove('nav_hide');
+        navigation.classList.add('nav_show');
+        burger.classList.add('burger_open');
+    }
+});

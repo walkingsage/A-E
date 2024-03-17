@@ -12,6 +12,16 @@
 }
 
 @font-face {
+  font-family: 'Room';
+  src: local('Room Thin'), local('Room-Thin'),
+      url('Room-Thin.woff2') format('woff2'),
+      url('Room-Thin.woff') format('woff'),
+      url('Room-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Arno Pro ';
   src: local('/assets/style/Arno Pro  Display Regular'), local('Arno-Pro--Display-Regular'),
       url('/assets/style/ArnoPro-Display.woff2') format('woff2'),
@@ -37,7 +47,6 @@
 
 @mixin room{
   font-family:'Room';
-  src: url(/assets/style/fonts/room-thin.ttf);
 }
 
 @mixin arno{

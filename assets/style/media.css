@@ -6,19 +6,24 @@
       .programm_day_map .spans .line {
         width: 67% !important; } }
 @media screen and (max-width: 1150px) {
-  header nav ul li a {
-    font-size: 13px !important; }
-  header .timer {
+  .timer {
     width: 560px !important; }
-    header .timer .timer_container {
+    .timer .timer_container {
       width: 520px !important; }
-      header .timer .timer_container .timer_values {
+      .timer .timer_container .timer_values {
         height: 84px !important; }
-        header .timer .timer_container .timer_values .numbers_timer {
+        .timer .timer_container .timer_values .numbers_timer {
           font-size: 26px !important; }
-        header .timer .timer_container .timer_values .timer_name_value {
+        .timer .timer_container .timer_values .timer_name_value {
           font-size: 12px !important; }
 
+  header nav ul li a {
+    font-size: 13px !important; }
+
+  .daily_map .mobile {
+    display: flex !important; }
+  .daily_map .desctop {
+    display: none !important; }
   .daily_map .top_info h2 {
     max-width: 544px; }
   .daily_map .top_info span {
@@ -71,24 +76,23 @@
     padding-top: 60px !important; }
     .dear_guests .bottom_text {
       font-size: 24px !important; }
+    .dear_guests .timer {
+      width: 620px !important;
+      justify-self: center; }
+      .dear_guests .timer .timer_container {
+        width: 580px !important; }
+        .dear_guests .timer .timer_container .timer_values {
+          height: 88px !important; }
+          .dear_guests .timer .timer_container .timer_values .numbers_timer {
+            font-size: 30px !important; }
+          .dear_guests .timer .timer_container .timer_values .timer_name_value {
+            font-size: 14px !important; }
 
   header {
     grid-template-columns: auto !important;
     grid-template-rows: 65px 1fr 60px 125px !important; }
     header nav ul li a {
       font-size: 11px !important; }
-    header .timer {
-      grid-area: 4/1/5/4 !important;
-      width: 620px !important;
-      justify-self: center; }
-      header .timer .timer_container {
-        width: 580px !important; }
-        header .timer .timer_container .timer_values {
-          height: 88px !important; }
-          header .timer .timer_container .timer_values .numbers_timer {
-            font-size: 30px !important; }
-          header .timer .timer_container .timer_values .timer_name_value {
-            font-size: 14px !important; }
 
   .daily_map .top_info h2 {
     max-width: 446px !important; }
@@ -147,6 +151,17 @@
     flex-direction: column;
     align-items: center; }
 
+  .guest_anket .timer {
+    width: 620px !important;
+    justify-self: center; }
+    .guest_anket .timer .timer_container {
+      width: 580px !important; }
+      .guest_anket .timer .timer_container .timer_values {
+        height: 88px !important; }
+        .guest_anket .timer .timer_container .timer_values .numbers_timer {
+          font-size: 30px !important; }
+        .guest_anket .timer .timer_container .timer_values .timer_name_value {
+          font-size: 14px !important; }
   .guest_anket .guest_anket_form {
     max-width: 80% !important; } }
 @media screen and (max-width: 740px) {
@@ -170,9 +185,19 @@
   main h2 {
     font-size: 42px !important; }
   main .second_info {
-    max-width: 80%;
     align-self: center; }
+    main .second_info p {
+      max-width: 90% !important; }
 
+  .dear_guests .timer {
+    border-radius: 20px !important;
+    width: 480px !important; }
+    .dear_guests .timer .timer_container {
+      width: 460px !important;
+      margin: 10px;
+      grid-gap: 10px; }
+      .dear_guests .timer .timer_container .timer_values {
+        height: 80px !important; }
   .dear_guests .calendar {
     grid-template-rows: 40px 290px !important;
     width: 340px !important; }
@@ -181,12 +206,16 @@
       top: 109px !important; }
 
   header {
-    grid-template-rows: 30% 1fr 60px 100px 30px !important; }
+    grid-template-columns: 100% !important;
+    grid-template-rows: 30% 1fr 60px 100px 30px !important;
+    justify-items: center; }
+    header .container_btn_go_to_anket {
+      grid-area: 4/1/5/2 !important; }
     header .Name_container {
       display: none !important; }
     header .main_ae {
       display: block;
-      grid-area: 1/2/2/3;
+      grid-area: 1/1/2/2;
       align-self: center;
       justify-self: center; }
     header nav {
@@ -208,18 +237,19 @@
             font-size: 22px !important; }
       header nav li:last-child {
         border: none !important; }
-    header .timer {
-      border-radius: 20px !important;
-      width: 480px !important; }
-      header .timer .timer_container {
-        width: 460px !important;
-        margin: 10px;
-        grid-gap: 10px; }
-        header .timer .timer_container .timer_values {
-          height: 80px !important; }
 
   .daily_map .top_info h2 {
-    max-width: 380px !important; } }
+    max-width: 380px !important; }
+
+  .guest_anket .timer {
+    border-radius: 20px !important;
+    width: 480px !important; }
+    .guest_anket .timer .timer_container {
+      width: 460px !important;
+      margin: 10px;
+      grid-gap: 10px; }
+      .guest_anket .timer .timer_container .timer_values {
+        height: 80px !important; } }
 @media screen and (max-width: 540px) {
   body {
     background-image: none !important; }
@@ -250,6 +280,16 @@
   .dear_guests {
     padding-top: 40px !important;
     margin-bottom: 100px !important; }
+    .dear_guests .timer {
+      width: 380px !important; }
+      .dear_guests .timer .timer_container {
+        width: 360px !important; }
+        .dear_guests .timer .timer_container .timer_values {
+          height: 63px !important; }
+          .dear_guests .timer .timer_container .timer_values .numbers_timer {
+            font-size: 23px !important; }
+          .dear_guests .timer .timer_container .timer_values .timer_name_value {
+            font-size: 11px !important; }
     .dear_guests svg {
       width: 100px !important; }
     .dear_guests .calendar {
@@ -263,23 +303,14 @@
         width: 53px !important; }
     .dear_guests .bottom_text {
       max-width: 80%;
-      font-size: 20px !important; }
+      font-size: 20px !important;
+      margin-bottom: 40px !important; }
 
   header {
     grid-template-rows: 30% 1fr 60px 83px 80px !important; }
-    header .timer {
-      width: 380px !important; }
-      header .timer .timer_container {
-        width: 360px !important; }
-        header .timer .timer_container .timer_values {
-          height: 63px !important; }
-          header .timer .timer_container .timer_values .numbers_timer {
-            font-size: 23px !important; }
-          header .timer .timer_container .timer_values .timer_name_value {
-            font-size: 11px !important; }
 
   .daily_map .top_info {
-    max-width: 323px !important; }
+    max-width: 90% !important; }
     .daily_map .top_info span {
       margin-top: 32px !important; }
   .daily_map .programm_day_map .spans {
@@ -299,6 +330,17 @@
 
   .guest_anket {
     margin-bottom: 100px !important; }
+    .guest_anket .timer {
+      margin-top: 10px !important;
+      width: 380px !important; }
+      .guest_anket .timer .timer_container {
+        width: 360px !important; }
+        .guest_anket .timer .timer_container .timer_values {
+          height: 63px !important; }
+          .guest_anket .timer .timer_container .timer_values .numbers_timer {
+            font-size: 23px !important; }
+          .guest_anket .timer .timer_container .timer_values .timer_name_value {
+            font-size: 11px !important; }
     .guest_anket .guest_anket_form .input:nth-child(1) {
       margin-top: 0px !important; }
     .guest_anket .guest_anket_form .submit_btn {
@@ -337,24 +379,33 @@
     body .burger svg {
       width: 20px !important; }
 
+  main .second_info {
+    font-size: 15px !important; }
+
+  .dear_guests .timer {
+    margin-top: 28px !important;
+    width: 324px !important; }
+    .dear_guests .timer .timer_container {
+      width: 304px !important; }
+      .dear_guests .timer .timer_container .timer_values {
+        height: 50px !important;
+        row-gap: 1px !important; }
+        .dear_guests .timer .timer_container .timer_values .numbers_timer {
+          font-size: 19px !important; }
+        .dear_guests .timer .timer_container .timer_values .timer_name_value {
+          font-size: 8px !important; }
+  .dear_guests .bottom_text {
+    margin-bottom: 25px !important; }
+
   header {
     grid-template-rows: 30% 1fr 60px 70px 80px !important; }
+    header .container_btn_go_to_anket a {
+      width: 260px !important; }
     header nav {
       max-width: 215.6px; }
-    header .timer {
-      width: 324px !important; }
-      header .timer .timer_container {
-        width: 304px !important; }
-        header .timer .timer_container .timer_values {
-          height: 50px !important;
-          row-gap: 1px !important; }
-          header .timer .timer_container .timer_values .numbers_timer {
-            font-size: 19px !important; }
-          header .timer .timer_container .timer_values .timer_name_value {
-            font-size: 8px !important; }
 
   .daily_map .top_info h2 {
-    font-size: 25px !important; }
+    font-size: 24px !important; }
   .daily_map .programm_day_map .spans {
     left: 71px !important; }
   .daily_map .programm_day_map .container_event .event_name {
@@ -362,6 +413,19 @@
 
   .dress_code .chrustal {
     background-size: cover !important; }
+
+  .guest_anket .timer {
+    margin-top: 0px !important;
+    width: 324px !important; }
+    .guest_anket .timer .timer_container {
+      width: 304px !important; }
+      .guest_anket .timer .timer_container .timer_values {
+        height: 50px !important;
+        row-gap: 1px !important; }
+        .guest_anket .timer .timer_container .timer_values .numbers_timer {
+          font-size: 19px !important; }
+        .guest_anket .timer .timer_container .timer_values .timer_name_value {
+          font-size: 8px !important; }
 
   footer {
     font-size: 14px !important;

@@ -21,5 +21,32 @@
   src: local("Arno Pro  Display Light"), local("Arno-Pro--Display-Light"), url("/assets/style/ArnoPro-LightDisplay.woff2") format("woff2"), url("/assets/style/ArnoPro-LightDisplay.woff") format("woff"), url("/assets/style/ArnoPro-LightDisplay.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  behavior: smooth !important; }
 
-/*# sourceMappingURL=fonts.css.map */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  body a {
+    max-width: 174px;
+    width: 100%;
+    height: 49px;
+    background-color: #0bbf04;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #ffffff;
+    border-radius: 20px;
+    font-family: 'Room'; }
+
+/*# sourceMappingURL=styleguestform.css.map */

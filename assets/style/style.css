@@ -8,7 +8,7 @@
   unicode-range: U+0020-02DC; }
 @font-face {
   font-family: 'Room';
-  src: local("Room Thin"), local("Room-Thin"), url("Room-Thin.woff2") format("woff2"), url("Room-Thin.woff") format("woff"), url("Room-Thin.ttf") format("truetype");
+  src: local("Room Thin"), local("Room-Thin"), url("/assets/style/fonts/Room-Thin.woff2") format("woff2"), url("/assets/style/fonts/Room-Thin.woff") format("woff"), url("/assets/style/fonts/Room-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 @font-face {
@@ -42,8 +42,8 @@
   100% {
     opacity: 1; } }
 .puff-in-center {
-  -webkit-animation: puff-in-center 2s cubic-bezier(0.47, 0, 0.745, 0.715) both;
-  animation: puff-in-center 2s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
+  -webkit-animation: puff-in-center 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  animation: puff-in-center 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) both; }
 
 @-webkit-keyframes puff-in-center {
   0% {
@@ -303,6 +303,22 @@
     opacity: 100%; }
   100% {
     opacity: 0%; } }
+.slide-in-fwd-center {
+  -webkit-animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.animation_start_calendar {
+  -webkit-animation: calendar_show 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: calendar_show 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.animation_start_calendar svg {
+  -webkit-animation: ring_show 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: ring_show 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.animation_start_timer {
+  -webkit-animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
 .animation_start .line {
   -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
@@ -323,6 +339,37 @@
   -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
 
+.anket_sucess {
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+form .showed {
+  animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+form .hiden {
+  animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  -webkit-animation: slide-in-bottom 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+.menu_show_previer {
+  -webkit-animation: menu_show_previer 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: menu_show_previer 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes menu_show_previer {
+  0% {
+    left: -50px;
+    opacity: 0; }
+  100% {
+    left: 0px;
+    opacity: 1; } }
+
+@keyframes menu_show_previer {
+  0% {
+    left: -50px;
+    opacity: 0; }
+  100% {
+    left: 0px;
+    opacity: 1; } }
 @-webkit-keyframes slide-in-top {
   0% {
     -webkit-transform: translateY(-100px);
@@ -552,6 +599,143 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
     opacity: 1; } }
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-transform: scale(0.91);
+    -ms-transform: scale(0.91);
+    -o-transform: scale(0.91); }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -moz-transform: scale(0.98);
+    -ms-transform: scale(0.98);
+    -o-transform: scale(0.98); }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -moz-transform: scale(0.87);
+    -ms-transform: scale(0.87);
+    -o-transform: scale(0.87); }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
+@-webkit-keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: translateZ(-1400px);
+    transform: translateZ(-1400px);
+    opacity: 0;
+    -moz-transform: translateZ(-1400px);
+    -ms-transform: translateZ(-1400px);
+    -o-transform: translateZ(-1400px); }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0); } }
+@keyframes slide-in-fwd-center {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    opacity: 0;
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0); }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    opacity: 1;
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1); } }
+@-webkit-keyframes calendar_show {
+  0% {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9); }
+  100% {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.514);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
+@keyframes calendar_show {
+  0% {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9); }
+  100% {
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.514);
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
+@-webkit-keyframes ring_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
+@keyframes ring_show {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0); }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1); } }
 @media screen and (max-width: 950px) {
   .animation_start .line {
     -webkit-animation: slide-in-left_column 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both !important;
@@ -613,6 +797,8 @@ body {
   body .burger {
     display: none; }
   body .preloader {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -621,7 +807,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100vw;
-    height: 100vh;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -638,6 +823,37 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 65px 1fr 60px 75px; }
+  header .top_info {
+    padding-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    header .top_info span {
+      width: 20px;
+      height: 1px;
+      background-color: #000000;
+      margin-top: 5px; }
+    header .top_info h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      font-family: 'Room';
+      font-weight: lighter;
+      text-align: center; }
+    header .top_info .left {
+      margin-right: 20px; }
+    header .top_info .right {
+      margin-left: 20px; }
   header .main_ae {
     display: none; }
   header nav {
@@ -709,6 +925,8 @@ header {
         -ms-flex-pack: right;
             justify-content: right; }
   header .container_btn_go_to_anket {
+    -webkit-transform-style: flat;
+            transform-style: flat;
     width: 100%;
     height: 100%;
     grid-area: 3/2/4/3;
@@ -739,28 +957,31 @@ header {
       user-select: none; }
     header .container_btn_go_to_anket .btn_go_to_anket:hover {
       cursor: pointer; }
-  header .timer {
-    height: 101%;
+
+main {
+  width: 100%; }
+  main .timer {
     width: 680px;
-    position: relative;
-    grid-area: 4/2/5/3;
     display: grid;
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     background-color: #ffffff;
-    border-radius: 20px 20px 0 0; }
-    header .timer .timer_container {
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    -webkit-box-shadow: 0px 0px 20px 18px rgba(34, 60, 80, 0.13);
+            box-shadow: 0px 0px 20px 18px rgba(34, 60, 80, 0.13); }
+    main .timer .timer_container {
       width: 640px;
-      position: absolute;
       top: 0px;
       left: 0px;
       display: grid;
       margin: 20px;
       grid-template-columns: repeat(5, 1fr);
       grid-gap: 25px; }
-      header .timer .timer_container .timer_values {
+      main .timer .timer_container .timer_values {
         font-family: 'Arno Pro Light';
         color: #ffffff;
         text-transform: uppercase;
@@ -776,27 +997,24 @@ header {
         border-radius: 10px;
         -webkit-box-shadow: 0px 0px 10px 5px #252525 inset;
         box-shadow: 0px 0px 10px 5px #252525 inset; }
-        header .timer .timer_container .timer_values .numbers_timer {
+        main .timer .timer_container .timer_values .numbers_timer {
           display: grid;
           -webkit-box-align: end;
               -ms-flex-align: end;
                   align-items: end;
           justify-items: center;
           font-size: 34px; }
-        header .timer .timer_container .timer_values .timer_name_value {
+        main .timer .timer_container .timer_values .timer_name_value {
           display: grid;
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: start;
           justify-items: center;
           font-size: 16px; }
-    header .timer .timer_container:hover {
+    main .timer .timer_container:hover {
       cursor: default; }
-
-main {
-  width: 100%; }
   main .dear_guests {
-    padding-top: 100px;
+    padding-top: 50px;
     background-color: #ffffff;
     width: 100%;
     display: grid;
@@ -805,17 +1023,15 @@ main {
     main .dear_guests .bottom_text {
       font-family: 'Arno Pro Light';
       font-weight: lighter;
-      font-size: 32px;
+      font-size: 26px;
       text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px; }
+      margin-top: 0px;
+      margin-bottom: 100px; }
     main .dear_guests .calendar {
       display: grid;
       grid-template-rows: 50px 300px;
       width: 400px;
       border: 1px solid #000000;
-      -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
-      box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2);
       -webkit-touch-callout: none;
       -webkit-user-select: none;
       -moz-user-select: none;
@@ -914,7 +1130,15 @@ main {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none; }
+    user-select: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    main .second_info p {
+      max-width: 80%; }
   main .daily_map {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -931,6 +1155,8 @@ main {
             flex-direction: column;
     padding-bottom: 65px;
     background-color: #ffffff; }
+    main .daily_map .mobile {
+      display: none; }
     main .daily_map .programm_day_map {
       max-width: 90%;
       margin-top: 80px;
@@ -1118,6 +1344,11 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    main .guest_anket .anket_succes {
+      display: none;
+      width: 90%; }
+      main .guest_anket .anket_succes p {
+        width: 100%; }
     main .guest_anket .guest_anket_form {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1132,6 +1363,8 @@ main {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: start; }
+      main .guest_anket .guest_anket_form .allergy {
+        display: none; }
       main .guest_anket .guest_anket_form .input {
         margin-top: 58px;
         display: -webkit-box;
@@ -1146,6 +1379,8 @@ main {
           font-family: 'Room';
           font-size: 24px;
           margin-bottom: 15px; }
+          main .guest_anket .guest_anket_form .input .label_top em {
+            font-size: 13px; }
         main .guest_anket .guest_anket_form .input .text_input {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1198,7 +1433,8 @@ main {
               border: 1px solid #000000;
               border-radius: 50%; }
             main .guest_anket .guest_anket_form .input .radio_buttons .r_b .radio {
-              display: none; }
+              position: absolute;
+              opacity: 0; }
             main .guest_anket .guest_anket_form .input .radio_buttons .r_b input[type=radio]:checked + label:before {
               background-image: url(/assets/images/doted.svg);
               background-repeat: no-repeat;
@@ -1232,9 +1468,7 @@ main {
               position: absolute;
               z-index: -1;
               opacity: 0;
-              display: block;
-              width: 0;
-              height: 0; }
+              display: block; }
             main .guest_anket .guest_anket_form .input .checkbox .ch_b label {
               display: inline-block;
               position: relative;

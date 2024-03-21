@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='ru' charset='utf-8'>
 
 <head>
     <meta charset="UTF-8">
@@ -8,7 +8,9 @@
     <link rel="icon" href="/images/AE - VECTOR.svg">
     <link rel="stylesheet" href="/assets/style/style.css">
     <link rel="stylesheet" href="/assets/style/media.css">
+    <link rel="image_src" href="https://ae-wedding.ru/assets/images/aelink.png" />
     <script src="/assets/js/script.js" defer></script>
+    <script src="/assets/js/contact.js"></script>
 </head>
 
 <body>
@@ -53,7 +55,7 @@
                 <li><a id="details" class="scroll-to">Детали</a></li>
             </ul>
         </nav>
-        <svg class="main_ae puff-in-center" width="151" height="83" viewBox="0 0 151 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="main_ae" id="main_ae_header" width="151" height="83" viewBox="0 0 151 83" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M77.6065 77.7232C73.6323 77.7232 68.7093 63.4576 63.2719 49.1919H49.9252L50.9138 51.1596H26.1984L26.6927 49.1919H23.2325C13.3463 76.7394 8.89756 79.199 0 78.7071V82.6424H33.613V78.7071H30.1528H26.6927C16.3122 77.7232 21.2556 62.4737 24.7158 55.095H52.3971C61.789 75.2637 56.8459 78.7071 51.4085 78.7071H45.4768V82.6424H141.867V49.1919H138.901C139.395 74.7717 125.06 78.7071 116.163 78.7071H95.402V49.1919H83.5382V70.3445C83.5382 74.7717 80.0781 78.2152 77.6065 77.7232Z" fill="white"/>
             <path d="M43.4987 31.4828H56.3507L43.993 0H43.0044L30.1523 31.4828H33.6125L38.5556 18.201L43.4987 31.4828Z" fill="white"/>
             <path d="M95.4012 31.4828H83.5378V14.7576C83.5378 6.88685 78.1006 5.41109 74.6404 5.41109H69.9595V1.96765H140.878V31.4828H137.912C137.912 14.2656 128.52 4.91917 115.174 5.41109H95.4012V31.4828Z" fill="white"/>
@@ -93,53 +95,9 @@
             </p>
         </div>
         <div class="container_btn_go_to_anket">
-            <a class="scroll-to btn_go_to_anket bounce-top" id="guest_anket">
-                Подтвердить присутствие
+            <a class="scroll-to btn_go_to_anket" id="dear_guests">
+                Перейти к приглашению
             </a>
-        </div>
-        <div class="timer">
-            <div class="timer_container">
-                <div class="timer_values">
-                    <div id="timer_value_mounth" class="numbers_timer">
-                        00
-                    </div>
-                    <div class="timer_name_value mounth_name_value">
-                        Месяцев
-                    </div>
-                </div>
-                <div class="timer_values">
-                    <div id="timer_value_days" class="numbers_timer">
-                        00
-                    </div>
-                    <div class="timer_name_value days_name_value">
-                        Дней
-                    </div>
-                </div>
-                <div class="timer_values">
-                    <div id="timer_value_hours" class="numbers_timer">
-                        00
-                    </div>
-                    <div class="timer_name_value hours_name_value">
-                        Часов
-                    </div>
-                </div>
-                <div class="timer_values">
-                    <div id="timer_value_minutes" class="numbers_timer">
-                        00
-                    </div>
-                    <div class="timer_name_value minutes_name_value" >
-                        Минут
-                    </div>
-                </div>
-                <div class="timer_values">
-                    <div id="timer_value_seconds" class="numbers_timer">
-                        00
-                    </div>
-                    <div class="timer_name_value seconds_name_value">
-                        Секунд
-                    </div>
-                </div>
-            </div>
         </div>
     </header>
     <main>
@@ -171,9 +129,9 @@
                 <span class="right active_animations"></span>
             </div>  
             <div class="second_info active_animations">
-                <p>Скоро состоится одно из самых важных<br> событий в нашей жизни - День нашей свадьбы.</p>
+                <p>Скоро состоится одно из самых важных событий в нашей жизни - День нашей свадьбы.</p>
             </div>
-            <div class="calendar">
+            <div class="calendar active_animations">
                 <div class="calendar_top">
                     <div class="mounth">
                         июль
@@ -183,7 +141,7 @@
                     </div>
                 </div>
                 <div class="calendar_days">
-                    <svg width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="active_animations" width="64" height="63" viewBox="0 0 64 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M38.6766 12.8139C38.6766 12.8139 22.1303 4.1181 7.53105 18.6086C7.53105 18.6086 -9.54183 34.8724 8.52 55.2853C8.52 55.2853 25.9135 70.9192 45.378 55.8968C45.378 55.8968 61.2403 43.8131 51.0067 23.7151L61.7344 23.1843C61.7344 23.1843 64.098 22.976 63.8976 20.9504L63.283 12.4048C63.283 12.4048 63.4915 11.6345 62.2364 10.5557L51.6182 1.01175C51.6182 1.01175 50.9402 0.189391 49.9274 0.218622L40.7399 0.135471C40.7399 0.135471 38.9922 0.340272 38.7649 2.17513L38.6766 12.8139ZM51.1247 3.47472L47.8328 6.87415L56.4285 14.6002L59.7203 11.2008L51.1247 3.47472ZM46.3089 5.32271L48.9353 2.41514L43.0658 2.22605L46.3089 5.32271ZM61.0703 13.3225L58.2487 16.2363L61.3836 19.0541L61.0703 13.3225ZM60.1892 21.0688L46.6351 21.7839L56.3394 17.4268L60.1892 21.0688ZM42.3058 20.9809L54.5262 15.9787L46.7325 8.79175L42.3058 20.9809ZM45.0134 7.24654L41.0695 3.70164L41.1814 17.0636L45.0134 7.24654ZM39.0748 20.8017L38.9637 15.252C38.9637 15.252 23.4848 6.66861 9.62638 19.7653C9.62638 19.7653 -7.11138 35.6469 10.6174 53.9006C10.6174 53.9006 26.5673 69.0523 45.453 52.6942C45.453 52.6942 58.1735 40.137 48.3754 23.8932L42.7223 24.2619C42.7223 24.2619 54.2929 36.321 42.4475 50.7194C42.4475 50.7194 29.5423 65.2314 12.3174 52.3403C12.3174 52.3403 -2.81545 38.9273 11.5103 23.0936C11.5103 23.0936 22.926 10.384 39.0748 20.8017ZM39.5854 23.9856C39.5854 23.9856 52.3593 35.1512 40.7354 49.3622C40.7354 49.3622 29.3569 61.4491 14.8264 51.5072C14.8264 51.5072 -0.0154376 39.9731 12.8461 24.8393C12.8461 24.8393 24.9905 12.4038 39.5854 23.9856Z" fill="black"/>
                     </svg>
                     <div class="day">1</div>
@@ -223,14 +181,63 @@
                     <div class="day_out_month">4</div>
                 </div>
             </div>
+            <div class="timer active_animations"> 
+                <div class="timer_container">
+                    <div class="timer_values">
+                        <div id="timer_value_mounth" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value mounth_name_value">
+                            Месяцев
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_days" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value days_name_value">
+                            Дней
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_hours" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value hours_name_value">
+                            Часов
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_minutes" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value minutes_name_value" >
+                            Минут
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_seconds" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value seconds_name_value">
+                            Секунд
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="bottom_text">
                 Будем рады, если вы проведете этот день с нами!
             </div>
         </div>
         <div class="daily_map">
-            <div class="top_info">
+            <div class="top_info desctop">
                 <span class="left active_animations"></span>
                 <h2 class="active_animations">ПРОГРАММА СВАДЕБНОГО ДНЯ</h2>
+                <span class="right active_animations"></span>
+            </div>
+            <div class="top_info mobile">
+                <span class="left active_animations"></span>
+                <h2 class="active_animations">ПРОГРАММА <br> СВАДЕБНОГО ДНЯ</h2>
                 <span class="right active_animations"></span>
             </div>
             <div class="programm_day_map container">
@@ -332,8 +339,8 @@
                 <span class="right active_animations"></span>
             </div>
             <div class="second_info active_animations">
-                <p>Мы очень хотим сделать наш первый семейный <br>
-                    праздник самым красивым и стильным. <br>
+                <p>Мы очень хотим сделать наш первый семейный
+                    праздник самым красивым и стильным.
                     Пожалуйста, поддержите нашу цветовую гамму вечера.</p>
             </div>
             <div class="dress_colors">
@@ -354,8 +361,8 @@
                 </div>
             </div>
             <div class="second_info active_animations">
-                <p>Ниже представлена общая концепция вечера - хрусталь <br>
-                    будем очень благодарны если ваш наряд будет <br>
+                <p>Ниже представлена общая концепция вечера - хрусталь
+                    будем очень благодарны если ваш наряд будет
                     соответствовать выбранной нами стилистике!</p>
             </div>
             <div class="dress_images">
@@ -371,21 +378,27 @@
                 <h2 class="anim_main_words active_animations">АНКЕТА ГОСТЯ</h2>
                 <span class="right active_animations"></span>
             </div>
-            <div class="second_info active_animations">
+            <div class="second_info active_animations anket_succes">
                 <p>
-                    Просим подтвердить свое присутствие на торжестве до 01.05.2024 <br>
+                    Ваши ответы на анкету <br> <u><strong> Успешно отправленны! </strong></u> <br>
+                    До встречи на мероприятии!
+                </p>
+            </div>
+            <div class="second_info active_animations anket_sub">
+                <p>
+                    Просим подтвердить свое присутствие на торжестве до <u><strong>01.05.2024</strong></u> <br>
                     Будем очень рады видеть Вас! 
                 </p>
             </div>
-            <form class="guest_anket_form" action="" method="post" name="guest_anket_form">
+            <form class="guest_anket_form" enctype="multipart/form-data" method="post" id="form" onsubmit="submitForm(event)" action="send.php">
                 <div class="input">
                     <label class="label_top" for="fio">Фамилия Имя</label>
-                    <input class="text_input" type="text" id="fio" name="fio" placeholder="Иван Иванов/Мария Иванова">
+                    <input class="text_input" type="text" id="fio" name="fio" placeholder="Иван Иванов/Мария Иванова" required>
                 </div>
                 <div class="input">
                     <label class="label_top">Сможете ли вы присутствовать?</label>
                     <div class="radio_buttons">
-                        <div class="r_b"><input class="radio" type="radio" id="yes" value="Смогу/сможем присутствовать" name="can_you_visit"><label for="yes">Смогу/сможем присутствовать</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="yes" value="Смогу/сможем присутствовать" name="can_you_visit" required><label for="yes">Смогу/сможем присутствовать</label></div>
                         <div class="r_b"><input class="radio" type="radio" id="idk" value="Затрудняюсь ответить" name="can_you_visit"><label for="idk">Затрудняюсь ответить</label></div>
                         <div class="r_b"><input class="radio" type="radio" id="no" value="Не смогу придти" name="can_you_visit"><label for="no">Не смогу придти</label></div>
                     </div>
@@ -393,41 +406,85 @@
                 <div class="input">
                     <label class="label_top">Будут ли с Вами дети?</label>
                     <div class="radio_buttons">
-                        <div class="r_b"><input class="radio" type="radio" id="with_child" value="Да" name="child_with_you"><label for="with_child">Да</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="with_child" value="Да" name="child_with_you" required><label for="with_child">Да</label></div>
                         <div class="r_b"><input class="radio" type="radio" id="no_child" value="Нет" name="child_with_you"><label for="no_child">Нет</label></div>
                     </div>
                 </div>
-                <div class="input">
+                <div class="input childs">
                     <label for="child_info" class="label_top">Их имя фамилия и возраст</label>
                     <input class="text_input" type="text" id="child_info"  name="child_info" placeholder="Сергей Иванов - 5 лет, Алексей Иванов - 10 лет и т.д.">
                 </div>
                 <div class="input">
                     <label class="label_top">Есть ли аллергия на определенные продукты?</label>
                     <div class="radio_buttons">
-                        <div class="r_b"><input class="radio" type="radio" id="with_Allergy" value="Да" name="you_are_allergy"><label for="with_Allergy">Да</label></div>
+                        <div class="r_b"><input class="radio" type="radio" id="with_Allergy" value="Да" name="you_are_allergy" required><label for="with_Allergy">Да</label></div>
                         <div class="r_b"><input class="radio" type="radio" id="without_allergy" value="Нет" name="you_are_allergy"><label for="without_allergy">Нет</label></div>
                     </div>
                 </div>
-                <div class="input">
+                <div class="input allergy">
                     <label class="label_top" for="allergy_list">Перечислите список продуктов на которые у Вас аллергия:</label>
                     <input class="text_input" type="text" id="allergy_list" name="allergy_list" placeholder="Молоко, зелень, цитрус, перец ...">
                 </div>
                 <div class="input">
-                    <label class="label_top">Предпочтения по алкоголю</label>
+                    <label class="label_top">Предпочтения по алкоголю <br> <em>(можно выбрать несколько вариантов)</em></label>
                     <div class="checkbox">
-                        <div class="ch_b"><input type="checkbox" id="champane" value="Шампанское" name="alco_select"/><label for="champane">Шампанское</label></div>
-                        <div class="ch_b"><input type="checkbox" id="white_dry_vine" value="Белое сухое вино" name="alco_select"/><label for="white_dry_vine">Белое сухое вино</label></div>
-                        <div class="ch_b"><input type="checkbox" id="red_semi_sweet_vine" value="Красное полусладкое вино" name="alco_select"/><label for="red_semi_sweet_vine">Красное полусладкое вино</label></div>
-                        <div class="ch_b"><input type="checkbox" id="konjac" value="Коньяк" name="alco_select"/><label for="konjac">Коньяк</label></div>
-                        <div class="ch_b"><input type="checkbox" id="vodka" value="Водка" name="alco_select"/><label for="vodka">Водка</label></div>
-                        <div class="ch_b"><input type="checkbox" id="non_alcohol" value="Безалкогольные напитки" name="alco_select"/><label for="non_alcohol">Безалкогольные напитки</label></div>
-                        <div class="ch_b"><input type="checkbox" id="drink_all" value="Пью все" name="alco_select"/><label for="drink_all">Пью все</label></div>
+                        <div class="ch_b"><input type="checkbox" id="champane" value="Шампанское" name="alco_select[]"/><label for="champane">Шампанское</label></div>
+                        <div class="ch_b"><input type="checkbox" id="white_dry_vine" value="Белое сухое вино" name="alco_select[]"/><label for="white_dry_vine">Белое сухое вино</label></div>
+                        <div class="ch_b"><input type="checkbox" id="red_semi_sweet_vine" value="Красное полусладкое вино" name="alco_select[]"/><label for="red_semi_sweet_vine">Красное полусладкое вино</label></div>
+                        <div class="ch_b"><input type="checkbox" id="konjac" value="Коньяк" name="alco_select[]"/><label for="konjac">Коньяк</label></div>
+                        <div class="ch_b"><input type="checkbox" id="vodka" value="Водка" name="alco_select[]"/><label for="vodka">Водка</label></div>
+                        <div class="ch_b"><input type="checkbox" id="non_alcohol" value="Безалкогольные напитки" name="alco_select[]"/><label for="non_alcohol">Безалкогольные напитки</label></div>
+                        <div class="ch_b"><input type="checkbox" id="drink_all" value="Пью все" name="alco_select[]"/><label for="drink_all">Пью все</label></div>
                     </div>
                 </div>
                 <div class="btn_send">
                     <button type="submit" class="submit_btn">Отправить</button>
                 </div>
             </form>
+            <div class="timer active_animations"> 
+                <div class="timer_container">
+                    <div class="timer_values">
+                        <div id="timer_value_mounth_1" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value mounth_name_value1">
+                            Месяцев
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_days_1" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value days_name_value1">
+                            Дней
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_hours_1" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value hours_name_value1">
+                            Часов
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_minutes_1" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value minutes_name_value1" >
+                            Минут
+                        </div>
+                    </div>
+                    <div class="timer_values">
+                        <div id="timer_value_seconds_1" class="numbers_timer">
+                            00
+                        </div>
+                        <div class="timer_name_value seconds_name_value1">
+                            Секунд
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="details">
             <div class="top_info">
@@ -436,9 +493,9 @@
                 <span class="right active_animations"></span>
             </div>
             <div class="second_info active_animations">
-                <p>По всем вопроса связанными с торжественным вечером <br>
+                <p>По всем вопросам связанными с торжественным вечером <br>
                     и сюрпризами, обращаться к нашему организатору - <br>
-                    Екатерина Шакланова</p>
+                    <u><strong>Екатерина Шакланова</strong></u></p>
             </div>
             <a href="tel:+79276501970" class="tel">+7 (927) 650-19-70</a>
             <div class="contact">

@@ -9,6 +9,20 @@
                 width: 67% !important
 
 @media screen and (max-width: 1150px)
+    .timer
+        width: 560px !important
+
+        .timer_container
+            width: 520px !important
+
+            .timer_values
+                height: 84px !important
+
+                .numbers_timer
+                    font-size: 26px !important
+
+                .timer_name_value
+                    font-size: 12px !important
     header
         nav
             ul
@@ -16,22 +30,11 @@
                     a
                         font-size: 13px !important
 
-        .timer
-            width: 560px !important
-
-            .timer_container
-                width: 520px !important
-
-                .timer_values
-                    height: 84px !important
-
-                    .numbers_timer
-                        font-size: 26px !important
-
-                    .timer_name_value
-                        font-size: 12px !important
-
     .daily_map
+        .mobile
+            display: flex !important
+        .desctop
+            display: none !important
         .top_info
             h2
                 max-width: 544px
@@ -102,18 +105,7 @@
         .bottom_text
             font-size: 24px !important
 
-    header
-        grid-template-columns: auto !important
-        grid-template-rows: 65px 1fr 60px 125px !important
-
-        nav
-            ul
-                li
-                    a
-                        font-size: 11px !important
-
         .timer
-            grid-area: 4/1/5/4 !important
             width: 620px !important
             justify-self: center
 
@@ -128,6 +120,16 @@
 
                     .timer_name_value
                         font-size: 14px !important
+
+    header
+        grid-template-columns: auto !important
+        grid-template-rows: 65px 1fr 60px 125px !important
+
+        nav
+            ul
+                li
+                    a
+                        font-size: 11px !important
 
     .daily_map
         .top_info
@@ -211,6 +213,22 @@
 
     .guest_anket
 
+        .timer
+            width: 620px !important
+            justify-self: center
+
+            .timer_container
+                width: 580px !important
+
+                .timer_values
+                    height: 88px !important
+
+                    .numbers_timer
+                        font-size: 30px !important
+
+                    .timer_name_value
+                        font-size: 14px !important
+
         .guest_anket_form
             max-width: 80% !important
 
@@ -239,10 +257,27 @@
             font-size: 42px !important
 
         .second_info
-            max-width: 80%
             align-self: center
 
+            p
+                max-width: 90% !important
+
     .dear_guests
+        .timer
+            border-radius: 20px !important
+            width: 480px !important
+
+            .timer_container
+                width: 460px !important
+                margin: 10px
+                grid-gap: 10px
+
+                .timer_values
+                    height: 80px !important
+
+                    .numbers_timer
+
+                    .timer_name_value
         .calendar
             grid-template-rows: 40px 290px !important
             width: 340px !important
@@ -253,14 +288,19 @@
         .bottom_text
 
     header
+        grid-template-columns: 100% !important
         grid-template-rows: 30% 1fr 60px 100px 30px !important
+        justify-items: center
+
+        .container_btn_go_to_anket
+            grid-area: 4/1/5/2 !important
 
         .Name_container
             display: none !important
 
         .main_ae
             display: block
-            grid-area: 1/2/2/3
+            grid-area: 1/1/2/2
             align-self: center
             justify-self: center
 
@@ -287,22 +327,6 @@
 
             li:last-child
                 border: none !important
-
-        .timer
-            border-radius: 20px !important
-            width: 480px !important
-
-            .timer_container
-                width: 460px !important
-                margin: 10px
-                grid-gap: 10px
-
-                .timer_values
-                    height: 80px !important
-
-                    .numbers_timer
-
-                    .timer_name_value
 
     .daily_map
         .top_info
@@ -341,6 +365,22 @@
                 .circle_colour
 
     .guest_anket
+
+        .timer
+            border-radius: 20px !important
+            width: 480px !important
+
+            .timer_container
+                width: 460px !important
+                margin: 10px
+                grid-gap: 10px
+
+                .timer_values
+                    height: 80px !important
+
+                    .numbers_timer
+
+                    .timer_name_value
 
         .guest_anket_form
 
@@ -385,6 +425,21 @@
         padding-top: 40px !important
         margin-bottom: 100px !important
 
+        .timer
+            width: 380px !important
+
+            .timer_container
+                width: 360px !important
+
+                .timer_values
+                    height: 63px !important
+
+                    .numbers_timer
+                        font-size: 23px !important
+
+                    .timer_name_value
+                        font-size: 11px !important
+
         svg
             width: 100px !important
 
@@ -404,6 +459,7 @@
         .bottom_text
             max-width: 80%
             font-size: 20px !important
+            margin-bottom: 40px !important
 
     header
         grid-template-rows: 30% 1fr 60px 83px 80px !important
@@ -422,24 +478,9 @@
 
             li:last-child
 
-        .timer
-            width: 380px !important
-
-            .timer_container
-                width: 360px !important
-
-                .timer_values
-                    height: 63px !important
-
-                    .numbers_timer
-                        font-size: 23px !important
-
-                    .timer_name_value
-                        font-size: 11px !important
-
     .daily_map
         .top_info
-            max-width: 323px !important
+            max-width: 90% !important
 
             h2
 
@@ -487,6 +528,22 @@
 
     .guest_anket
         margin-bottom: 100px !important
+
+        .timer
+            margin-top: 10px !important
+            width: 380px !important
+
+            .timer_container
+                width: 360px !important
+
+                .timer_values
+                    height: 63px !important
+
+                    .numbers_timer
+                        font-size: 23px !important
+
+                    .timer_name_value
+                        font-size: 11px !important
 
         .guest_anket_form
             .input:nth-child(1)
@@ -554,8 +611,26 @@
         h2
 
         .second_info
+            font-size: 15px !important
 
     .dear_guests
+
+        .timer
+            margin-top: 28px !important
+            width: 324px !important
+
+            .timer_container
+                width: 304px !important
+
+                .timer_values
+                    height: 50px !important
+                    row-gap: 1px !important
+
+                    .numbers_timer
+                        font-size: 19px !important
+
+                    .timer_name_value
+                        font-size: 8px !important
 
         svg
 
@@ -567,9 +642,14 @@
                 svg
 
         .bottom_text
+            margin-bottom: 25px !important
 
     header
         grid-template-rows: 30% 1fr 60px 70px 80px !important
+
+        .container_btn_go_to_anket
+            a
+                width: 260px !important
 
         .Name_container
 
@@ -586,27 +666,11 @@
 
             li:last-child
 
-        .timer
-            width: 324px !important
-
-            .timer_container
-                width: 304px !important
-
-                .timer_values
-                    height: 50px !important
-                    row-gap: 1px !important
-
-                    .numbers_timer
-                        font-size: 19px !important
-
-                    .timer_name_value
-                        font-size: 8px !important
-
     .daily_map
         .top_info
 
             h2
-                font-size: 25px !important
+                font-size: 24px !important
 
             span
 
@@ -645,6 +709,23 @@
                 .circle_colour
 
     .guest_anket
+
+        .timer
+            margin-top: 0px !important
+            width: 324px !important
+
+            .timer_container
+                width: 304px !important
+
+                .timer_values
+                    height: 50px !important
+                    row-gap: 1px !important
+
+                    .numbers_timer
+                        font-size: 19px !important
+
+                    .timer_name_value
+                        font-size: 8px !important
 
         .guest_anket_form
             .input:nth-child(1)

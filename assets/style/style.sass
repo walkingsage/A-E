@@ -42,11 +42,12 @@ body
         display: none
 
     .preloader
+        height: 100vh /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100)
         position: fixed
         display: flex
         justify-content: center
         width: 100vw
-        height: 100vh
         align-items: center
         z-index: 1000
         background-color: #ffffff
@@ -64,6 +65,37 @@ header
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-template-rows: 65px 1fr 60px 75px
+
+    .top_info
+        padding-top: 50px
+        display: flex
+        align-items: center
+        justify-content: center
+        -webkit-touch-callout: none /* iOS Safari */
+        -webkit-user-select: none /* Safari */
+        -khtml-user-select: none /* Konqueror HTML */
+        -moz-user-select: none /* Old versions of Firefox */
+        -ms-user-select: none /* Internet Explorer/Edge */
+        user-select: none
+
+        span
+            width: 20px
+            height: 1px
+            background-color: #000000
+            margin-top: 5px
+
+        h2
+            text-transform: uppercase
+            font-size: 24px
+            +room
+            font-weight: lighter
+            text-align: center
+
+        .left
+            margin-right: 20px
+
+        .right
+            margin-left: 20px
 
     .main_ae
         display: none
@@ -142,6 +174,7 @@ header
         justify-content: right
 
     .container_btn_go_to_anket
+        transform-style: flat
         width: 100%
         height: 100%
         grid-area: 3/2/4/3
@@ -173,20 +206,22 @@ header
         .btn_go_to_anket:hover
             cursor: pointer
 
+main
+    width: 100%
+
     .timer
-        height: 101%
         width: 680px
-        position: relative
-        grid-area: 4/2/5/3
         display: grid
         justify-items: center
         align-items: center
         background-color: #ffffff
-        border-radius: 20px 20px 0 0
+        border-radius: 20px
+        margin-top: 50px
+        margin-bottom: 15px
+        box-shadow: 0px 0px 20px 18px rgba(34, 60, 80, 0.13)
 
         .timer_container
             width: 640px
-            position: absolute
             top: 0px
             left: 0px
             display: grid
@@ -227,11 +262,8 @@ header
         .timer_container:hover
             cursor: default
 
-main
-    width: 100%
-
     .dear_guests
-        padding-top: 100px
+        padding-top: 50px
         background-color: #ffffff
         width: 100%
         display: grid
@@ -241,19 +273,16 @@ main
         .bottom_text
             +arno
             font-weight: lighter
-            font-size: 32px
+            font-size: 26px
             text-align: center
-            margin-top: 40px
-            margin-bottom: 40px
+            margin-top: 0px
+            margin-bottom: 100px
 
         .calendar
             display: grid
             grid-template-rows: 50px 300px
             width: 400px
             border: 1px solid #000000
-            -webkit-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
-            -moz-box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
-            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.2)
             -webkit-touch-callout: none /* iOS Safari */
             -webkit-user-select: none /* Safari */
             -khtml-user-select: none /* Konqueror HTML */
@@ -360,6 +389,11 @@ main
         -moz-user-select: none /* Old versions of Firefox */
         -ms-user-select: none /* Internet Explorer/Edge */
         user-select: none
+        display: flex
+        justify-content: center
+
+        p
+            max-width: 80%
 
     .daily_map
         display: flex
@@ -369,6 +403,9 @@ main
         flex-direction: column
         padding-bottom: 65px
         background-color: #ffffff
+
+        .mobile
+            display: none
 
         .programm_day_map
             max-width: 90%
@@ -565,11 +602,21 @@ main
         justify-content: center
         align-items: center
 
+        .anket_succes
+            display: none
+            width: 90%
+
+            p
+                width: 100%
+
         .guest_anket_form
             display: flex
             flex-direction: column
             align-items: start
             justify-content: start
+
+            .allergy
+                display: none
 
             .input
                 margin-top: 58px
@@ -581,6 +628,9 @@ main
                     +room
                     font-size: 24px
                     margin-bottom: 15px
+
+                    em
+                        font-size: 13px
 
                 .text_input
                     display: flex
@@ -623,7 +673,8 @@ main
                             border-radius: 50%
 
                         .radio
-                            display: none
+                            position: absolute
+                            opacity: 0
 
                         input[type=radio]:checked + label:before
                             background-image: url(/assets/images/doted.svg)
@@ -655,8 +706,6 @@ main
                             z-index: -1
                             opacity: 0
                             display: block
-                            width: 0
-                            height: 0
 
                         label
                             display: inline-block
